@@ -1,0 +1,123 @@
+/* BODY BACKGROUND */
+* {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border within element dimensions */
+}
+
+.logo {
+    display: flex;
+    justify-content: left;  /* horizontal centering */
+    align-items:left;      /* vertical centering */
+    height: 2px;  
+}
+.nav_links {
+    margin-top: -10px;
+    max-width: 100%;
+    z-index: 1000;
+    height: 85px;
+    background-color: #9ddddd;
+    padding: 2rem;
+    flex-direction: vertical;
+    list-style: none;           /* Remove bullets */
+    display: flex;              /* Horizontally arrange list items */
+    gap: 2rem;                /* Space between links */
+    justify-content: flex-end;
+}
+.nav_links li a {
+    color: black;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.nav_links li a:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    transform: scale(1.1); /* Subtle zoom that won't break layout */
+
+}
+
+main {
+    text-align: center;
+
+    font-size: 35px;
+
+}
+
+.hero-msg{
+    text-align: center;
+    font-family: "Festive", cursive;
+    color: gold;
+    padding: 4rem;
+}
+
+#hero-img {
+    margin-top: 50px;
+    border-style:outset;
+    border-width: 10px;
+    border-color: #6e8efb;
+}
+.book {
+
+    text-align: center;
+    color: #f3f1f1;
+    background-color: rgb(122, 45, 45);
+    text-decoration: none;
+    padding: 1.5rem;
+    
+}
+
+#hero-msg h1 {
+    text-align: center;
+    padding: 15px;
+    margin-top: 5rem;
+}
+
+.card-img {
+    margin-top: 8rem;
+    border-style: outset;
+    border-width: 10px;
+    border-color: hsl(62, 82%, 48%);
+}
+
+#space2 {
+    height: 550px;
+    background-color: #22ff00;
+    margin-top: 5rem;
+}
+.icon {
+    width: 80px;
+}
+
+
+.mountains {
+    margin-top: 5rem;
+}
+.msg {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: #9ddddd;
+}
+
+.join {
+    text-align: center;
+    color: #f3f1f1;
+    background-color: rgb(122, 45, 45);
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+    top: 40px;
+
+}
+footer {
+    font-family: 'Roboto', sans-serif;
+    padding: 3rem;
+    margin-top: 5rem;
+    text-align: left;
+    font-size: 1.5rem;
+    text-decoration:none;
+    background-color:rgb(104, 189, 133);
+}
+p {
+    padding: 1rem;
+}
+
