@@ -1,0 +1,318 @@
+/* CSS - Name: "positionstyles.css" */
+/* Activity 1 styles */
+.content1 {
+  /* This is the parent of the activity 1 boxes. */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+}
+  
+.red1 {
+  background-color: red;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+  
+ .green1:nth-of-type(2) {
+  background-color: green;
+  grid-column: 1;
+  grid-row: 2;
+  height: 100px;
+  width: 75%;
+  justify-self: center;
+}
+  
+.green1:nth-of-type(3) {
+  background-color: green;
+  grid-column: 2;
+  grid-row: 2;
+  height: 100px;
+  width: 75%;
+  justify-self: center;
+
+}
+  
+.yellow1:nth-of-type(4) {
+  background-color: gold;
+  grid-column: 1;
+  grid-row: 3;
+  height: 100px;
+  width: 75%;
+  justify-self: center;
+
+ }
+  
+ .yellow1:nth-of-type(5) {
+  background-color: gold;
+  grid-column: 2;
+  grid-row: 3;
+  height: 100px;
+  width: 75%;
+  justify-self: center;
+
+ }
+  
+ .blue1 {
+  background-color: blue;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+ }
+  
+/* Activity 2 styles */ 
+.content2 {
+  position: relative;
+  height: 300px; /* enough space to see all the boxes */
+  width: 300px;
+}
+
+.red2,
+.green2,
+.yellow2,
+.blue2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.red2 {
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+.green2 {
+  background-color: green;
+  top: 30px;
+  left: 30px;
+}
+.yellow2 {
+  background-color: gold;
+  top: 60px;
+  left: 60px;
+}
+.blue2 {
+  background-color: blue;
+  top: 90px;
+  left: 90px;
+}
+
+/* Activity 3 styles */ 
+.content3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  gap: 20px; /* both row and column gaps */
+  width: 100%;
+}
+.red3 {
+  background-color: red;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.green3 {
+  background-color: green;
+  grid-column: 1;
+  grid-row: 2;
+}
+.yellow3 {
+  background-color: gold;
+  grid-column: 2;
+  grid-row: 2;
+}
+.blue3 {
+  background-color: blue;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+/* Activity 4 styles */ 
+.content4 {
+  /* This is the parent of the activity 4 boxes. */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.red4 {
+  grid-row: 1 / span 3;
+  width: 100%; 
+  height: 100%; 
+  background-color: red; 
+} 
+.green4 {
+  grid-column: 2;
+  width: 100%; 
+  height: 100px; 
+  background-color: green; 
+} 
+.yellow4 {
+  grid-column: 2;
+  width: 100%; 
+  height: 100px; 
+  background-color: gold; 
+} 
+.blue4 {
+  grid-column: 2;
+  width: 100%; 
+  height: 100px;  
+  background-color: blue; 
+} 
+/* Activity 5 styles */ 
+.content5 {
+  /* This is the parent of the activity 5 boxes. */
+  display: grid;
+  /* Creates two columns: the first is 1/4 and the second is 3/4 of the width */
+  grid-template-columns: 1fr 3fr;
+  /* Defines the height of the rows */
+  grid-template-rows: 100px auto 100px;
+}
+
+.red5 {
+  background-color: red;
+  /* Makes the red box span both columns */
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.green5 {
+  background-color: green;
+  /* Places the green box in the first column (1/4 width) */
+  grid-column: 1;
+  grid-row: 2;
+  /* Add padding if text will be placed inside */
+  padding: 10px;
+}
+
+.yellow5 {
+  background-color: gold;
+  /* Places the yellow box in the second column (3/4 width) */
+  grid-column: 2;
+  grid-row: 2;
+  padding: 10px;
+}
+
+.blue5 {
+  background-color: blue;
+  /* Makes the blue box span both columns */
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+/* Activity 6 styles */ 
+.content6 {
+  /* This is the parent of the activity 6 boxes. */
+  position: relative; /* Crucial for positioning children */
+  width: 100%; /* Adjust this to fit your desired overall canvas size */
+  height: 400px; /* Adjust this to fit your desired overall canvas size */
+  border: 1px solid black; /* To visualize the container boundary */
+  background-color: white; /* White background for the empty areas */
+  overflow: hidden; /* Hides content that spills outside the container */
+}
+
+.red6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%; /* Adjusted to match image */
+  height: 150px; /* Adjusted to match image */
+  background-color: red;
+}
+
+.blue6 {
+  position: absolute;
+  top: 80px; /* Adjusted to match image */
+  left: 70px; /* Adjusted to match image */
+  width: 70%; /* Adjusted to match image */
+  height: 250px; /* Adjusted to match image */
+  background-color: blue;
+}
+
+.green6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:35%; /* Adjusted to match image */
+  height: 150px; /* Adjusted to match image */
+  background-color: green;
+  z-index: 1;
+}
+
+.yellow6 {
+  position: absolute;
+  top: 150px; /* Adjusted to match image */
+  right: 0;
+  width: 40%; /* Adjusted to match image */
+  height: 300px; /* Adjusted to match image */
+  background-color: gold;
+  z-index: 2; /* Changed to 'gold' as per your .yellow6 style */
+}
+
+/* Do not make any changes below here */
+.activity {
+  width: 70%; 
+  margin: 20px auto; 
+  font-family: Arial, sans-serif; 
+  border: 1px solid black; 
+  padding: 10px; 
+  clear:both; 
+  overflow: auto;
+} 
+
+.hint {
+  border: 1px solid grey;
+  background: #e0e0e0;
+  padding: .5em;
+  position: relative;
+  margin: 1em 0;
+}
+.hint h3 {
+  margin: 0;
+}
+.hint:hover {
+  background: #d0d0d0;
+}
+.hint > div {
+  display: none;
+}
+
+.hint input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hint input[type=checkbox]:checked ~ div {
+  display: block;
+}
+
+.hint i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 10px;
+  top: -3px;
+}
+.hint i:before, .hint i:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 3px;
+  height: 9px;
+}
+.hint i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.hint i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.hint input[type=checkbox]:checked ~ i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.hint input[type=checkbox]:checked ~ i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.hint a {
+  position: relative;
+  z-index: 1;
+}
