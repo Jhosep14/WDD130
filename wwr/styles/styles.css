@@ -226,55 +226,272 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: aliceblue;
+    font-size: 1.2em;
+    color: #eaf6f6;
+}
+footer a {
+    color: #1a5276;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
+/* -------- Rivers Page Specific -------- */
+.rivers-page main {
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Header with Background */
+.rivers-page h1 {
+    background-image: url('../images/Colorado-background.jpg'); /* Your image path */
+    background-size: cover;
+    background-position: 0% 40%;
+    color: white;
+    text-align: center;
+    padding:250px 20px;
+    margin-top: 80px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* River Highlights */
+.rivers-page .river-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    margin-top: -100px;
+}
+.rivers-page .river {
+    background-color: #eaf6f6;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+
+}
+
+.rivers-page .river:hover {
+    transform: scale(1.03);
+}
+
+.rivers-page .river img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.rivers-page .river h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: #1a5276;
+}
+
+/* Image Gallery */
+.rivers-page .image-gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.rivers-page .image-gallery h2 {
+    display: block;
+    width: 100%;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.rivers-page .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(50px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rivers-page .gallery-item1 {
+    grid-column: 1 / span 2;
+}
+.rivers-page .gallery-item2 {
+    grid-column: 3 / span 2;
+}
+.rivers-page .gallery-item3 {
+    grid-column: 5 / span 6;
+}
+.rivers-page .gallery-item4 {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+    margin-left: 20px;
+}
+.rivers-page .gallery-item5 {
+    grid-column: 4 / span 6;
+    grid-row: 2 / span 2;
+    margin-right: -30px;
+}
+
+.rivers-page .gallery-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.rivers-page .gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* Testimonial */
+.rivers-page .testimonial {
+    background-color: #f9f9f9;
+    border-left: 6px solid #1abc9c;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    font-style: italic;
+    color: #555;
+}
+.rivers-page .testimonials-title h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.rivers-page .testimonials-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 5px;
+}
+.rivers-page .testimonial p {
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* FAQ Page Styles */
+main.About-us {
+    max-width: 100;
+    margin-top: 50px;
+    padding: 2rem;
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(to bottom right, #f6faff, #e6f0ff);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 80, 170, 0.1);
+}
+
+.contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+.contact-page h1 { 
+    text-align: center;
+    font-size: 1.4rem;
+    color: #2a5d9f;
+}
+.contact-page p { 
+    text-align: center;
+}
+.contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* FAQ Section */
+.Headquarters h2 {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #2a5d9f;
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.faq p {
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #cce0f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease;
+}
+
+.FAQ h2{
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #2a5d9f;
+    text-align: center;
+}
+.foot {
+    color: #333;
+    background-color: aliceblue;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.foot a {
+    color: #1a5276;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+/* ---------- Responsive Media Queries ---------- */
+@media screen and (max-width: 768px) {
+    .rivers-page .river-highlights {
         flex-direction: column;
+        align-items: center;
     }
-    nav a {
-        display: block;
-        padding: 15px;
+
+    .rivers-page .river {
+        width: 90%;
+        max-width: 500px;
     }
-    #hero {
-        margin-top: 130px;
+
+    .rivers-page h1 {
+        font-size: 2em;
+        padding: 60px 20px;
     }
-    #hero-img {
-        margin-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .rivers-page .gallery-grid {
+        grid-template-columns: 1fr;
     }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    #hero-msg h1 {
-        color: #6f7364;
-    }
-    .home-title {
-        font-size: 25px;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #space2 {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
-    main {
-        padding-top: 130px;
+
+    .rivers-page .gallery-grid img {
+        height: 200px;
     }
 }
