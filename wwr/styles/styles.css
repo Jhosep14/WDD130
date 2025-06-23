@@ -397,6 +397,8 @@ main.About-us {
     margin-top: 50px;
 }
 .contact-page h2 { 
+    display: block;
+    width: 100%;
     text-align: center;
     font-size: 1.4rem;
     color: #2a5d9f;
@@ -424,7 +426,6 @@ main.About-us {
     width: 100%;
     font-size: 1.4rem;
     color: #2a5d9f;
-    margin-top: 1.5rem;
     margin-bottom: 0.3rem;
     padding-left: 10px;
     text-align: center;
