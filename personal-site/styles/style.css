@@ -52,13 +52,18 @@ header nav a {
 .hero {
   display: flex;
   justify-content: space-between;
+  background-image: url(../images/Background3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   background-color: var(--secondary-color);
 }
 
 .hero-text {
   max-width: 50%;
+  color: white;
 }
 
 .hero-text h1 {
@@ -81,11 +86,6 @@ header nav a {
   border-radius: 5px;
 }
 
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
 
 section {
   padding: 3rem 2rem;
