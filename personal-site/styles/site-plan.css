@@ -6,7 +6,7 @@ Fonts are separated by a | */
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #2C3E50;
-  --secondary-color: #ECF0F1;
+  --secondary-color: #006d77;
   --accent1-color: #E74C3C;
   --accent2-color: #F39C12;
 
@@ -177,4 +177,22 @@ nav a:hover {
 .home-page-images img{
   width: 300px;
   height: 250px;
+}
+
+.gallery-grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, 350px);
+  gap: 15px;
+  margin-top: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-grid2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
